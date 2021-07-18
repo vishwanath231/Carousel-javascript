@@ -8,7 +8,12 @@ body{
 
     font-family:'Spartan', sans-serif;
 }
-
+.head__title{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 500;
+}
 .carousel{
     position: relative;
     height: 430px;
@@ -28,7 +33,7 @@ body{
     list-style: none;
     position: relative;
     height: 100%;
-    transition: transform 250ms ease-in;
+    transition: transform .7s ease-in;
 
 }
 .carousel__slide{
@@ -37,13 +42,19 @@ body{
     bottom: 0;
 
 }
-
+.img__container{
+    overflow: hidden;
+}
+.img__container img:hover {
+    transform: scale(1.2);
+}
 .img__container img{
     height: 337px;
     width: 360px;
     object-fit: cover;
-   
+    transition: all 0.7s ease;
 }
+
 
 .info__container {
     width: 320px;
@@ -58,9 +69,10 @@ body{
 .info__title{
     text-align: center;
     margin-bottom: .7rem;
-    font-size: 14px;
-    font-weight: 400;
+    font-size: 11px;
+    font-weight: 500;
     color: coral;
+    text-transform: uppercase;
 }
 .info__content{
     font-size: 16px;
@@ -96,7 +108,7 @@ body{
 
 }
 
-
+/* DOT */
 
 .carousel__nav{
     position: absolute;
@@ -121,6 +133,13 @@ body{
     background-color: rgb(255, 127, 80);
 }
 
+/* ARROW */
+
+.flex_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .carousel__arrow{
     margin-top: 5px;
 }
@@ -147,9 +166,17 @@ body{
     display: none;
 }
 
+
+.counter{
+    display: none;
+}
+.current-count{
+    display: block;
+}
+
 @media(max-width:600px){
     .carousel{
-        margin-top: 30px;
+        margin-top: 15px;
     }
     .carousel__nav {
         position: absolute;

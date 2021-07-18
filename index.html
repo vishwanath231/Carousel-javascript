@@ -10,6 +10,7 @@
 <body>
 
 
+    <div class="head__title">Carousel</div>
     <div class="carousel">
         <div class="carousel__track-container">
             <ul class="carousel__track">
@@ -133,15 +134,25 @@
             <button class="carousel__indicator"></button>
         </div>
 
-        <div class="carousel__arrow">
-            <button class="carousel-button carousel__button-left is-hidden">
-                <div>prev</div>
-                <img src="assets/img/left.png" alt="">
-            </button>
-            <button class="carousel-button carousel__button-right">
-                <div>next</div>
-                <img src="assets/img/right.png" alt="">
-            </button>
+        <div class="flex_container">
+            <div class="carousel__arrow">
+                <button class="carousel-button carousel__button-left is-hidden">
+                    <div>prev</div>
+                    <img src="assets/img/left.png" alt="">
+                </button>
+                <button class="carousel-button carousel__button-right">
+                    <div>next</div>
+                    <img src="assets/img/right.png" alt="">
+                </button>
+            </div>
+
+            <div class="counter__container">
+                <div class="counter current-count">01/05</div>
+                <div class="counter">02/05</div>
+                <div class="counter">03/05</div>
+                <div class="counter">04/05</div>
+                <div class="counter">05/05</div>
+            </div>
         </div>
 
     </div>
