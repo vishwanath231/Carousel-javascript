@@ -17,7 +17,7 @@ body{
 .carousel{
     position: relative;
     height: 430px;
-    width: 350px;
+    width: 340px;
     margin: 0 auto;
     margin-top: 50px;
 }
@@ -49,15 +49,15 @@ body{
     transform: scale(1.2);
 }
 .img__container img{
-    height: 337px;
-    width: 360px;
+    height: 300px;
+    width: 340px;
     object-fit: cover;
     transition: all 0.7s ease;
 }
 
 
 .info__container {
-    width: 320px;
+    width: 310px;
     position: relative;
     background-color: #fff;
     padding: 10px 10px 0 10px;
@@ -180,7 +180,7 @@ body{
     }
     .carousel__nav {
         position: absolute;
-        top: 430px;
+        top: 400px;
         right: 30%;
         transform: translate(-50%, -50%);
     }
@@ -188,7 +188,7 @@ body{
         display: inline;
         flex-direction: column;
     }
-    .carousel__arrow{
+    .flex_container{
         margin-top: 15px;
     }
     
