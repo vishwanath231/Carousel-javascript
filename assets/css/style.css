@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    font-family:'Spartan', sans-serif;
+}
+
+.carousel{
+    position: relative;
+    height: 430px;
+    width: 350px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.carousel__track-container {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+.carousel__track {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    height: 100%;
+    transition: transform 250ms ease-in;
+
+}
+.carousel__slide{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+
+}
+
+.img__container img{
+    height: 337px;
+    width: 360px;
+    object-fit: cover;
+   
+}
+
+.info__container {
+    width: 320px;
+    position: relative;
+    background-color: #fff;
+    padding: 10px 10px 0 10px;
+    z-index: 9999;
+    margin: -80px 15px 0 15px;
+     box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+     rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+.info__title{
+    text-align: center;
+    margin-bottom: .7rem;
+    font-size: 14px;
+    font-weight: 400;
+    color: coral;
+}
+.info__content{
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+}
+.comment_container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.comment img,
+.heart img {
+    width: 20px;
+}
+.comment_container span{
+    font-size: 14px;
+    font-weight: 500;
+    color: #555;
+    padding-bottom: 10px;
+}
+
+
+
+.carousel__nav{
+    position: absolute;
+    top: 34px;
+    right: -26px;
+    transform: translate(-50%,-50%);
+}
+
+.carousel__indicator{
+    display: flex;
+    flex-direction: row;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(255,127,80,.3);
+    margin: 4px 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.carousel__indicator.current-slide {
+    background-color: rgb(255, 127, 80);
+}
+
+.carousel__arrow{
+    margin-top: 5px;
+}
+.carousel-button{
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.carousel-button div{
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.carousel-button img{
+    width: 40px;
+    object-fit: cover;
+}
+.carousel__button-left{
+    margin-right: 20px;
+}
+
+.is-hidden{
+    display: none;
+}
